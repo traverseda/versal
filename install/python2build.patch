@@ -1,0 +1,27 @@
+From e25820421db1374e27d913ef5d2f845e6dd0b689 Mon Sep 17 00:00:00 2001
+From: traverseda <traverse.da@gmail.com>
+Date: Sat, 12 Oct 2013 00:33:00 -0300
+Subject: [PATCH] It will now build python2
+
+---
+ CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 605dfd4..bc08c1a 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -27,8 +27,8 @@ set (${PROJECT_NAME}_VERSION
+ # Build options
+ option(VERSE_OPENSSL "Support for OpenSSL" ON)
+ option(VERSE_CLANG "Use Clang Compiler" OFF)
+-option(VERSE_PYTHON2_MODULE "Verse Python2 Module" OFF)
+-option(VERSE_PYTHON3_MODULE "Verse Python3 Module" ON)
++option(VERSE_PYTHON2_MODULE "Verse Python2 Module" ON)
++option(VERSE_PYTHON3_MODULE "Verse Python3 Module" OFF)
+ option(VERSE_CHECK "Check Unit Tests" ON)
+ option(VERSE_DOXYGEN "Doxygen Documentation" ON)
+ option(VERSE_WEBSOCKET "Support for WebSocket" ON)
+-- 
+1.8.4
+
